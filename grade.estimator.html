@@ -1,0 +1,64 @@
+
+<script>
+    grade  = parseInt( prompt("Your grade please: "))
+
+
+    // HW2: 
+    // what would result? *** The following examples all return - 9 (an integer - un numar intreg)***
+
+    // parseInt ( 9.9 )
+    // parseInt ( 9.1 )
+    // parseInt ( 9.5 )
+    // parseInt ( 9.59)
+
+    /*LIMIT  = 7
+
+    if (grade >= LIMIT )  {
+        alert("GOOD!")
+    } else {
+        alert("BAD!")
+    }*/
+
+    // HW3
+    // 1...4 - VERY BAD
+    // 5...6 - BAD
+    // 7...8 - OK
+    // 9     - GOOD
+    // 10    - EXCELLENT
+
+    let limitMin   = 1 
+    let limitMax   = 10
+    if (grade >= 1 && grade <= 4) {
+        alert("VERY BAD!")
+    } else if (grade >= 5 && grade <= 6) {
+        alert("BAD!")
+    } else if (grade >=7 && grade <= 8) {
+        alert("OK!")
+    } else if (grade === 9) {
+        alert("GOOD!")
+    } else if (grade === 10) {
+        alert("EXCELLENT!")
+    } else if(grade < limitMin || grade > limitMax ) {
+        alert("Non!")
+    } else {
+        alert("LALALA!")
+    }
+
+    
+    // HINT: *** Conditii care se exclud reciproc ***
+    
+    // if (diapason_1 )  {
+    //    code_1
+    // } else if (diapason_2) {
+    //    code_2
+    //   .......
+    // } else if (diapason_N) {
+    //    code_N
+    // }  else {
+    //    code_ELSE
+    // }
+
+
+
+
+</script>
